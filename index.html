@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fitness Tracker</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">Fitness Tracker</div>
+        <div class="nav-links">
+            <a href="#goalSetting">Set Goals</a>
+            <a href="#workoutLog">Log Workout</a>
+            <a href="#summary">Summary</a>
+            <a href="#progress">Progress</a>
+        </div>
+    </nav>
+    <div id="app">
+        <section id="goalSetting">
+            <h2>Set Your Goals</h2>
+            <input type="number" id="goalWorkouts" placeholder="Goal Workouts (max 100)">
+            <input type="number" id="goalCalories" placeholder="Goal Calories (max 1000)">
+            <input type="number" id="goalDuration" placeholder="Goal Duration (max 120 min)">
+            <button id="setGoalsBtn">Set Goals</button>
+        </section>
+        <section id="workoutLog">
+            <h2>Log Workout</h2>
+            <input type="text" id="workoutType" placeholder="Workout Type">
+            <input type="number" id="duration" placeholder="Duration (minutes)">
+            <input type="number" id="calories" placeholder="Calories Burned">
+            <input type="date" id="workoutDate" placeholder="Date">
+            <button id="logWorkoutBtn">Log Workout</button>
+        </section>
+        <section id="summary">
+            <h2>Workout Summary</h2>
+            <p id="totalWorkouts">Total Workouts: 0</p>
+            <div class="progress-bar">
+                <div id="workoutProgress" class="progress" style="width: 0%;">0%</div>
+            </div>
+            <p id="totalCalories">Total Calories: 0</p>
+            <div class="progress-bar">
+                <div id="caloriesProgress" class="progress" style="width: 0%;">0%</div>
+            </div>
+            <p id="averageDuration">Average Duration: 0 min</p>
+            <div class="progress-bar">
+                <div id="durationProgress" class="progress" style="width: 0%;">0%</div>
+            </div>
+        </section>
+        <section id="progress">
+            <h2>Your Progress</h2>
+            <ul id="workoutList"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
