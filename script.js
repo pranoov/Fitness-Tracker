@@ -1,3 +1,4 @@
+//Calls functions when buttons pressed
 document.getElementById('logWorkoutBtn').addEventListener('click', logWorkout);
 document.getElementById('setGoalsBtn').addEventListener('click', setGoals);
 document.addEventListener('DOMContentLoaded', loadWorkouts);
